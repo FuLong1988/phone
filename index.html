@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funeral Services</title>
+    <style>
+        .social-icons img {
+            width: 40px; /* Adjust width as desired */
+            height: 40px; /* Adjust height as desired */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #800000;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            height: 40px;
+            vertical-align: middle;
+        }
+
+        header .menu-icon {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu a:hover {
+            background-color: #f5f5f5;
+        }
+
+        .video-section {
+            text-align: center;
+            padding: 15px;
+            background-color: white;
+        }
+
+        .video-section iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 315px;
+            border: none;
+        }
+
+        .about-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .about-section h2 {
+            color: #c0a16b;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .about-section img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 5px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+            color: #555;
+        }
+
+        .footer {
+            background-color: #800000;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .video-section {
+            text-align: center;
+            padding: 15px;
+            background-color: white;
+        }
+
+        .team-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .team-images img {
+            width: 150px; /* 調整圖片寬度 */
+            height: 150px; /* 調整圖片高度 */
+            object-fit: cover; /* 讓圖片填滿區域 */
+            border-radius: 20%; /* 圓角效果 */
+            border: 3px solid #ddd; /* 可選，給圖片加上邊框 */
+        }
+        
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.querySelector('.menu-icon');
+            const menu = document.querySelector('.menu');
+
+            menuIcon.addEventListener('click', () => {
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!menu.contains(e.target) && !menuIcon.contains(e.target)) {
+                    menu.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-6/434739338_7699552686731049_9091522336767432860_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=rpXcZZqDep0Q7kNvgGg6G8i&_nc_zt=23&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=APVkwgEJkf7akTv8VxUbkUU&oh=00_AYAAt4uvpDOS4gUWRtDGlLvfdE6UDN5Ze7wcC7PbQ9_hiw&oe=67905231" alt="Logo">
+    <span class="menu-icon">&#9776;</span>
+    <div class="menu">
+        <a href="#about">關於我們</a>
+        <a href="#process">服務流程</a>
+        <a href="#contract">服務契約</a>
+        <a href="#contact">聯絡我們</a>
+    </div>
+</header>
+
+<section class="video-section">
+    <h1>我們的團隊</h1>
+    <div class="team-images">
+        <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-6/434760878_7699552460064405_2809457648568895338_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gLFebaPRDiEQ7kNvgEb8TT7&_nc_zt=23&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=Abgku7tjlC3yIQPA5Jez2KJ&oh=00_AYDLDZRWN85Z6odj1i7cczwAmWQ3aNNGXdTJxi8cZMvi4A&oe=6790556E" alt="Team Member 1">
+        <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-6/434745937_7699552593397725_3582557001557640528_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=T-lxIDcFzlAQ7kNvgEaY8gc&_nc_zt=23&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=AnaNrXo5kjx_7-Vk6KehG69&oh=00_AYCi6RbNMJmqG8u1oP83KRSJPcFsD3HNLP6Dg-JGpL4-kg&oe=67905F5A" alt="Team Member 2">
+    </div>
+    <div class="team-images">
+        <img src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-6/434729583_7699552653397719_1033048204708981804_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XszIahXmGN0Q7kNvgHclp3g&_nc_zt=23&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=AI3MmFhQAi2xrEG0SQgNyYf&oh=00_AYCnWpvIo5m_l7mpQVD4h8nar3fB5GKbcE33y98ABUtocQ&oe=67907983" alt="Team Member 3">
+    </div>
+</section>
+
+<section class="about-section" id="about">
+    <h2>如何聯繫</h2>
+    <div class="social-icons">
+        <a href="#" target="_blank">
+            <img src="data:image/png;base64,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" alt="LINE">
+          </a>
+          <a href="#" target="_blank">
+            <img src="data:image/png;base64,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" alt="Facebook">
+          </a>
+    </div>
+</section>
+
+<div class="footer">
+    諮商電話 
+</div>
+
+</body>
+</html>
